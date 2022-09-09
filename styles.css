@@ -9,6 +9,10 @@ body {
 
 /* main _______________________________ */
 
+main {
+    border-bottom: 8px solid #222;
+}
+
 .back-behind {
     height: 700px;
     background-image: url(img/netflix-backgr.jpg);
@@ -106,3 +110,57 @@ body {
     padding: 0.5rem 3.5rem;
     cursor: pointer;
 }
+
+/* story-card_____________________________________- */
+
+.story-card {
+    background-color: black;
+    height: 600px;
+
+    justify-content: center;
+    align-items: center;
+    border-bottom: 8px solid #222;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 400px;
+}
+
+.card-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+}
+
+.card-text h1 {
+    font-size: 3.125rem;
+}
+
+.card-text p {
+    font-size: 1.5rem;
+}
+
+.card-animation-container {
+    height: 100%;
+    width: 50%;
+}
+
+.card-anim {
+    position: relative;
+}
+
+.story-card-img {
+    position: absolute;
+    z-index: 2;
+}
+
+.card-animation {
+    position: absolute;
+}
+
