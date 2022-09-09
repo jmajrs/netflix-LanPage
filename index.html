@@ -9,25 +9,29 @@
     <body>
         <main>
             <div class="back-behind">
-                <header class="header">
-                    <img class="netflix-logo" src="img/Netflix_2015_logo.svg">
-                    <select class="lang">
-                        <option>Español</option>
-                        <option>English</option>
-                    </select>
-                    <a class="login">Iniciar sesión</a>
-                </header>
-                <section class="top-int">
-                    <h1>Películas y series ilimitadas y mucho más.</h1>
-                    <p>Disfruta donde quieras. Cancela cuando quieras.</p>
-                    <aside class="moto">
-                        <p>¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</p>
-                    </aside>
-                    <form class="beggin">
-                        <input class="email-int" type="email" name="email" required></input>
-                        <a class="btn-beggin">Comenzar</a>
-                    </form>
-                </section>
+                <div class="overlay">
+                    <header class="header">
+                        <img class="netflix-logo" src="img/Netflix_2015_logo.svg">
+                        <section class="head-opt">
+                            <select class="lang">
+                                <option>Español</option>
+                                <option>English</option>
+                            </select>
+                            <a class="login" href="">Iniciar sesión</a>
+                        </section>
+                    </header>
+                    <section class="top-int">
+                        <h1>Películas y series<br> ilimitadas y mucho más.</h1>
+                        <p>Disfruta donde quieras. Cancela cuando quieras.</p>
+                        <aside class="moto">
+                            <p>¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</p>
+                        </aside>
+                        <form class="beggin">
+                            <input class="email-int" type="email" name="email" required placeholder="Email">
+                            <button class="btn-int">Comenzar</button>
+                        </form>
+                    </section>
+                </div>
             </div>
         </main>
     </body>
