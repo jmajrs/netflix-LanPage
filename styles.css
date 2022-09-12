@@ -20,6 +20,7 @@ main {
     height: 700px;
     background-image: url(img/netflix-backgr.jpg);
     background-size: cover;
+    border-bottom: 8px solid #222;
 }
 
 .back-behind {
@@ -124,7 +125,6 @@ main {
 /* story-card_____________________________________- */
 
 .story-card {
-    background-color: black;
     border-bottom: 8px solid #222;
     padding: 70px 45px;
 }
@@ -140,7 +140,7 @@ main {
 .card-text {
     width: 50%;
     height: 100%;
-    padding-right: 3rem;
+    padding-inline: 3rem;
 }
 
 .card-text h1 {
@@ -171,9 +171,9 @@ main {
 .card-animation {
     position: absolute;
     left: 50%;
+    top: 46%;
     max-height: 54%;
     max-width: 75%;
-    top: 46%;
     transform: translate(-50%,-50%);
     width: 100%;
 }
@@ -182,3 +182,55 @@ main {
     width: 100%;
 }
 
+/* story-card flipped______________________________ */
+
+.flipped .card-container {
+    flex-flow: row-reverse;
+}
+
+.story-card-img-flipped {
+    max-width: 100%;
+}
+
+.card-animation-flipped {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    min-width: 15rem;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    bottom: 6%;
+    background: black;
+    border: 2px solid gray;
+    border-radius: 0.75rem;
+    padding: .5em .75em;
+}
+
+.card-animationf-img {
+    height: 5rem;
+    max-width: 100%;
+}
+
+.card-animationf-text {
+    margin-inline: 1rem;
+}
+
+.card-animationf-text p {
+    margin-block: 0;
+}
+
+.text1 {
+    color: #0071eb;
+}
+
+.card-animationf-gif {
+    height: 3.75rem;
+}
+
+/* watch-on-device_________________________ */
+
+.watch-on-device .card-animation {
+    top: 35%;
+    max-width: 65%;
+}
