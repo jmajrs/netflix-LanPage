@@ -14,14 +14,23 @@ main {
     border-bottom: 8px solid #222;
 }
 
-.back-behind {
+/* top-main_____________________________ */
+
+.top-main{
     height: 700px;
     background-image: url(img/netflix-backgr.jpg);
+    background-size: cover;
+}
+
+.back-behind {
+    height: 100%;
+    background: rgba(7, 5, 21, 0.67);
 }
 
 .overlay {
     height: 100%;
-    background: rgba(7, 5, 21, 0.67);
+    max-width: 2000px;
+    margin: 0 auto;
 }
 
 .header {
@@ -116,27 +125,22 @@ main {
 
 .story-card {
     background-color: black;
-    height: 600px;
-
-    justify-content: center;
-    align-items: center;
     border-bottom: 8px solid #222;
+    padding: 70px 45px;
 }
 
 .card-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 400px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1100px;
 }
 
 .card-text {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
     width: 50%;
+    height: 100%;
+    padding-right: 3rem;
 }
 
 .card-text h1 {
@@ -144,24 +148,37 @@ main {
 }
 
 .card-text p {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    font-weight: 600;
 }
 
 .card-animation-container {
-    height: 100%;
+    display: flex;
     width: 50%;
 }
 
 .card-anim {
     position: relative;
+    overflow: hidden;
 }
 
 .story-card-img {
-    position: absolute;
+    position: relative;
     z-index: 2;
+    max-width: 100%;
 }
 
 .card-animation {
     position: absolute;
+    left: 50%;
+    max-height: 54%;
+    max-width: 75%;
+    top: 46%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.card-animation video {
+    width: 100%;
 }
 
