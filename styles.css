@@ -210,10 +210,11 @@ main {
 .card-animationf-img {
     height: 5rem;
     max-width: 100%;
+    padding-right: 1rem;
 }
 
 .card-animationf-text {
-    margin-inline: 1rem;
+    flex-grow: 1;
 }
 
 .card-animationf-text p {
