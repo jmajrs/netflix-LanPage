@@ -54,16 +54,30 @@ main {
     justify-content: space-around;
 }
 
+.globe {
+    position: relative;
+    width: 7rem;
+}
+
+.globe::before{
+    content: "\01F310";
+    position: absolute;
+    top: 22%;
+    left: 7%;
+}
+
 .lang {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: 1px solid white;
     border-radius: 3px;
-    width: 6.5rem;
-    height: 2.25rem;
+    width: 100%;
+    height: 2.45rem;
     text-align: center;
     font-size: 14px;
+    padding-inline: 1.75rem;
 }
+
 
 .login {
     font-size: 1.15rem;
@@ -354,6 +368,17 @@ main {
     font-size: 16px;
 }
 
+.footer-globe{
+    position: relative;
+}
+
+.footer-globe::before{
+    content: "\01F310";
+    position: absolute;
+    top: 30%;
+    left: 2%;
+}
+
 .footer-lang {
     background-color: black;
     color: #737373;
@@ -363,6 +388,7 @@ main {
     height: 3.5rem;
     text-align: center;
     font-size: 16px;
+    padding-inline: 3rem;
 }
 
 .footer-country {
